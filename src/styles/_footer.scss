@@ -1,0 +1,27 @@
+@use 'reset';
+@use 'var';
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    background-color: var.$background;
+
+    &__item{
+        text-align: center;
+        color: var.$corText;
+
+        h3{
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        a{
+            font-size: 25px;
+            font-weight: normal;
+            color: var.$button;
+        }
+    }
+}

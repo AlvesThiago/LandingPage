@@ -1,0 +1,45 @@
+@use 'reset';
+@use 'var';
+@use 'hero';
+@use 'info';
+@use 'footer';
+
+@media(max-width: var.$tablet){
+    .container{
+        max-width: 80%;
+    }
+}
+
+@media(max-width: var.$mobile){
+    .container{
+        max-width: 80%;
+    }
+
+    .hero{
+        &__content{
+            h1{
+                font-size: 26px;
+            }
+
+            p{
+                font-size: 22px;
+            }
+
+            span{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .info{
+        &__content{
+            &__item{
+                flex-direction: column;
+                text-align: center;
+                &__itens{
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+}
